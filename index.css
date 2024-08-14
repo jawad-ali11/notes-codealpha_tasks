@@ -1,0 +1,248 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+    /* overflow: hidden; */
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+   
+}
+.back-img-div{
+    overflow: hidden;
+    position: fixed;
+
+    width: 100%;
+}
+.back-img{
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.5;
+}
+.nav{
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    
+
+}
+.nav-part1{
+    display: flex;
+   align-items: center;
+    gap: 10px;
+    color: white;
+    /* padding-left: 20px; */
+ 
+}
+.nav-part1 p:nth-of-type(1){
+    font-size: 20px;
+    margin: 18px;
+    cursor: pointer;
+}
+.nav-part1 p:nth-of-type(2){
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.nav-part2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right: 18px;
+}
+.nav-part2 button{
+    color:#198754;
+    background-color: #212529;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #198754 ;
+    padding: 0 15px;
+   cursor: pointer;
+    height: 40px;
+}
+.nav-part2 button:hover{
+    background-color:#198754;
+    color: white;
+    transition: .2s ease-in-out;
+}
+.shadow{
+    box-shadow: 0px 0px  3px 2px  #198754;
+}
+.shadow-on-notes{
+    box-shadow: 0px 0px  1px 3.5px  #9ecbfb;
+    border: 1px solid  #0d6efd;
+}
+.nav-part2 button:nth-of-type(1){
+    margin-right:50px;
+}
+.nav-part2 button:nth-of-type(2){
+    margin-right:50px;
+}
+.nav-part2 input{
+    border-radius: 5px;
+    padding: 10px 50px 10px 10px;
+    margin-right: 8px;
+}
+.nav-part2 input::placeholder{
+    font-size: 16px;
+   
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #212529;
+    font-weight: bolder;
+    z-index: 1;
+    position: relative;
+    padding-top: 70px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+.note-taking-box{
+    border: 1px solid rgb(211, 180, 180);
+    background-color: #faeed7;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    width: 50%;
+    padding: 20px 0 20px 20px;
+
+}
+.note-taking-box-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.note-taking-box input{
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+   padding: 9px 10px;
+   width: 94%;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   outline: none;
+}
+.note-taking-box input::placeholder{
+  font-size: 16px;
+}
+.note-taking-box textarea{
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 9px 10px 50px 10px;
+   width: 94%;
+   margin-top: 10px;
+   margin-bottom: 15px;
+   outline: none;
+}
+.note-taking-box textarea::placeholder{
+    font-size: 16px;
+}
+.note-taking-box button{
+ background-color: #0d6efd;
+ border: none;
+ font-size: 16px;
+ color: white;
+ border-radius: 5px;
+ padding: 11px 15px;
+ cursor: pointer;
+}
+.note-taking-box button:hover{
+    transition: .3s ease-in-out;
+    background-color: #095dda;
+}
+.note-taking-box button:nth-of-type(1){
+    margin-right: 30px;
+}
+
+.heading2{
+    text-align: center;
+    color: #212529;
+    z-index: 1;
+    position: relative;
+    padding-top: 30px;
+    margin: 0;
+}
+.style{
+   background-color: #faeed7;
+   border-radius: 12px;
+   border: 1px solid rgb(211, 180, 180);
+   width: 18%;
+   min-height: 60px;
+   padding: 15px;
+   word-wrap: break-word;
+   display: inline-block;
+
+}
+#notes-site{
+    position: relative;
+    z-index: 1;
+    display: flex;
+   padding: 30px 0 0 110px;
+   width: 87%;
+   flex-wrap: wrap;
+   column-gap: 35px;
+   row-gap: 30px;
+
+}
+.saved-notes-title{
+    color: #212529;
+    margin: 0;
+    padding-bottom: 8px;
+
+}
+.myp{
+   margin: 0;
+   line-height: 1.5;
+   color: #212529;
+
+ 
+}
+.del-btn{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 7px 9px;
+    font-size: 14px;
+    border-radius: 3.2px;
+    cursor: pointer;
+    
+}
+.del-btn:hover{
+    transition: .3s ease-in-out;
+    background-color: #c41e08;
+}
+.del-btn:active{
+    box-shadow: 0 0 1px 3px #f68e98;
+}
+.mark-btn{
+    background-color: #ffc107;
+    color: black;
+    border: none;
+    padding: 7px 9px;
+    font-size: 14px;
+    border-radius: 3.2px;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+
+}
+.mark-btn:hover{
+    background-color: #f8ce50;
+    transition: .3s ease-in;
+}
+.mark-btn:active{
+    box-shadow: 0 0 1px 2px #f9ca3e;
+}
+.marked-green{
+    background-color: #b2fbbb;
+}
+.hidden
+{
+    display: none;
+}
